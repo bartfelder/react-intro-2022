@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import CardBox from './CardContents/CardBox';
 import { BASE_URL} from '../constants';
+import { useDispatch } from 'react-redux';
+import { addCard } from '../store/cardsSlice';
 
 const CreatorCard = () => {
   const [inEditMode, setInEditMode] = useState(false);
@@ -11,6 +13,7 @@ const CreatorCard = () => {
   const [description, setDescription] = useState('');
   const [videoLink, setVideoLink] = useState('');
   const timerId = useRef();
+  const dispatch = useDispatch();
 
   const handleAddButton = () => {
     setIsFlipping(true);
@@ -21,6 +24,12 @@ const CreatorCard = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(`Title: ${title} \nDescription ${description} \nVideo URL ${BASE_URL}${videoLink}`);
+    dispatch(addCard({
+      id: Math.trunc(Math.random() * 1000),
+      title,
+      description,
+      videoLink: `${BASE_URL}${videoLink}`,
+    }));
   }
 
   return (
