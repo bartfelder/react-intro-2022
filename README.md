@@ -1,8 +1,11 @@
 # Below you can find the original CRA read.me file contents.
 
-But before that just a few words. 
+But before that just a few words.
+
 In my opinion CRA is one of the easiest ways to start creating an application. 
+
 It is worth taking a look at the files and configs, read through them, Google or DuckDuckGo what you don't know. You can also google DuckDuckGo, or duckDuckGo Google, depending on your preference.
+
 I won't search it for you, in fact noone will, just do it.
 
 # Getting Started with Create React App
