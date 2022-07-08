@@ -1,4 +1,10 @@
-# React intro order flow
+# What is JSX?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React uses a templating language called JSX. 
 
+# So what is a templating language?
+
+Let me help you there:
+https://letmegooglethat.com/?q=what+is+a+templating+language
+
+So basically you can write html in your component as a return value and it will give you a rendered html element. Pure magic I'd say.
